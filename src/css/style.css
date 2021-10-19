@@ -152,7 +152,20 @@ p.promo_descr {
   padding: 71px 0 68px 0;
 }
 
-.reason_item .reason_item_round {
+.reasons .reason_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reasons .reason_item .reason_item_round {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,10 +180,6 @@ p.promo_descr {
   margin: 0 26px 0 0;
   background-color: #1eacc7;
   border-radius: 100%;
-  display: flex;
-  margin-top: 35px;
-  justify-content: center;
-  align-items: center;
 }
 
 p.reason_item_descr_title {
