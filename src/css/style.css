@@ -224,14 +224,23 @@ p.promo_descr {
   text-align: center;
 }
 
+.label_white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .title {
   margin-bottom: 0;
-  margin-top: 38px;
+  margin-top: 32px;
   color: #222222;
   font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+.title_white {
+  color: #ffffff;
 }
 
 .subtitle {
@@ -240,6 +249,10 @@ p.promo_descr {
   text-align: center;
   color: #222;
   line-height: 1.24;
+}
+
+.subtitle_white {
+  color: #ffffff;
 }
 
 .mobile {
@@ -318,5 +331,36 @@ p.promo_descr {
 
 .mobile_item_6 {
   background: url("../img/mobile_features/share_price_ride.jpg") center center/cover no-repeat;
+}
+
+.possibilities {
+  position: relative;
+  min-height: 896px;
+  background: url("../img/middle_bg.jpg") center center/cover no-repeat;
+  z-index: -1;
+  padding: 57px 0 138px 0;
+}
+
+.possibilities_bg_black {
+  position: absolute;
+  background-color: #070716;
+  height: 499px;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.possibilities_img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 56px;
+}
+
+.possibilities_text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
