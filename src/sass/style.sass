@@ -332,8 +332,7 @@ p
 .world
 	position: relative
 	background: url('../img/bottom_bg.jpg') center center/cover no-repeat
-	height: 717px
-	max-height: 717px
+	min-height: 717px
 	padding: 50px 0
 	&_link
 		display: block
@@ -345,11 +344,82 @@ p
 			font-size: 15px
 			color: $main_blue
 
-footer
-	height: 148px
-	.hr_footer
+.hr_footer
+	display: block
+	border: 2px solid $main_blue
+	width: 300px
+	margin: 0 auto
+	opacity: 1
+.footer
+	min-height: 148px
+	padding: 14px 10px 39px 10px
+	.wrapper
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-content: flex-start
+	.wrapper>div
+		margin-top: 34px
+		width: 33%
+		&:nth-child(3)
+			display: flex
+			justify-content: end
+		.footer_social_icons
+			display: flex
+			vertical-align: middle
+			width: 160px
+			a
+				transition: 0.4s all
+				display: flex
+				width: 32px
+				height: 32px
+				justify-content: center
+				align-items: center
+				text-decoration: none
+				background-color: #000
+				color: #fff
+				font-size: 20px
+				border-radius: 100%
+				margin: 0 7px 0 0
+				&:hover
+					color: $main_red
+		.footer_links
+			display: block
+			text-align: center
+			width: 390px
+			margin: 0 auto
+			&_main
+				display: flex
+				text-align: center
+				justify-content: space-around
+				a
+					text-transform: uppercase
+					text-decoration: none
+					font-size: 15px
+					font-weight: 300
+					color: #070716
+			&_sublinks
+				margin-top: 16px
+				display: flex
+				text-align: center
+				justify-content: space-between
+				a
+					text-transform: uppercase
+					text-decoration: none
+					font-size: 11px
+					font-weight: 300
+					color: #999
+			&_stores
+				display: flex
+				align-content: end
+				a
+					margin: 0 5px
+	&_language
 		display: block
-		border: 2px solid $main_blue
-		width: 300px
-		margin: 14px auto
-		opacity: 1
+		text-align: center
+		margin: 19px 0 0 0
+		a
+			text-decoration: none
+			text-transform: uppercase
+			font-size: 11px
+			color: $main_blue
