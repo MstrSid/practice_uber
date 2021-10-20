@@ -1,6 +1,12 @@
 $main_blue: #1eacc7
 $main_red: #ff5656
 
+@mixin btn_hover
+	&:hover
+		background-image: none
+		background-color: #13738670
+		border: 1px solid #fff
+
 *
 	font-family: 'Roboto', sans-serif
 
@@ -48,22 +54,22 @@ a
 	width: 100%
 	height: 84px
 	background-color: rgba(0,0,0, .6)
-	.subheader_logo
+	&_logo
 		display: block
 		margin-top: 16px
 		max-width: 100%
-	.subheader_official
+	&_official
 		font-size: 13px
 		font-weight: 300
 		text-align: left
 		color: rgba(255, 255, 255, 0.5)
-	.subheader_call_text
+	&_call_text
 		margin-top: 18px
 		font-size: 12px
 		font-weight: 300
 		text-align: right
 		color: #fff
-	.order_call
+	&_btn
 		margin-top: 21px
 		font-size: 14px
 		font-weight: 500
@@ -76,26 +82,25 @@ a
 		box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, 0.12)
 		border: none
 		background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
-		&:hover
-			background-image: linear-gradient(to top, #137386, #297b8b)
+		@include btn_hover
 
 .promo
 	background: url('../img/bg_top.jpg') center (center / cover) no-repeat
 	min-height: 800px
-	.promo_header
+	&_header
 		margin-top: 151px
 		font-size: 60px
 		font-weight: 700
 		text-align: center
 		color: #fff
 		margin-bottom: 0
-	.promo_subheader
+	&_subheader
 		font-size: 36px
 		font-weight: 500
 		text-align: center
 		color: #fff
 		margin-bottom: 0
-	.promo_send_request
+	&_btn
 		display: block
 		width: 259px
 		height: 63px
@@ -105,11 +110,10 @@ a
 		border-radius: 4px
 		background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
 		font-size: 18px
-		font-weight: 300
+		font-weight: 500
 		text-align: center
 		color: #fff
-		&:hover
-			background-image: linear-gradient(to top, #115e6d, #226674)
+		@include btn_hover
 
 .reasons
 	min-height: 900px
@@ -203,9 +207,6 @@ p
 		margin-bottom: 19px
 		padding: 92px 30px 0 30px
 		&_plus
-			display: flex
-			justify-content: center
-			align-content: center
 			position: absolute
 			padding: 6px
 			width: 26px
@@ -217,8 +218,29 @@ p
 			background-color: #000
 			bottom: 35px
 			cursor: pointer
-			img
-				width: 100%
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				width: 14px
+				height: 2px
+				background-color: $main_blue
+				transition: 0.4s all
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				width: 2px
+				height: 14px
+				background-color: $main_blue
+				transition: 0.4s all
+			&:hover
+				&:before, &:after
+					background-color: $main_red
 		&_subtitle
 			font-size: 24px
 			font-weight: 300
@@ -261,3 +283,48 @@ p
 		font-weight: 400
 		color: #222
 		text-align: center
+
+.conditions_requirements
+	min-height: 919px
+	padding: 68px 0 84px 0
+	span
+		text-transform: uppercase
+	&_item
+		margin-top: 33px
+		width: 478px
+		&_list
+			padding: 0
+		&_title
+			color: $main_blue
+			font-weight: 500
+			font-size: 22px
+		ul, &_bonus
+			font-size: 17px
+			font-weight: 300
+			text-align: left
+			color: #222
+			list-style-type: none
+			margin: 0
+			margin-top: 20px
+			li
+				position: relative
+				padding-left: 54px
+				margin-bottom: 10px
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					left: 21px
+					top: 5px
+					width: 21px
+					height: 20px
+					background: url('../icons/blue_done_icon.svg') center (center / cover) no-repeat
+		&_bonus
+			color: $main_blue
+	.warning
+		.conditions_requirements_item_title
+			color: $main_red
+		.conditions_requirements_item_list
+			li
+				&::before
+					background: url('../icons/red_done_icon.svg') center (center / cover) no-repeat
