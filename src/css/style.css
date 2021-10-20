@@ -247,7 +247,7 @@ p.promo_descr {
 
 .subtitle {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   color: #222;
   line-height: 1.24;
@@ -447,5 +447,38 @@ p.promo_descr {
 
 .conditions_requirements .warning .conditions_requirements_item_list li::before {
   background: url("../icons/red_done_icon.svg") center center/cover no-repeat;
+}
+
+.world {
+  position: relative;
+  background: url("../img/bottom_bg.jpg") center center/cover no-repeat;
+  height: 717px;
+  max-height: 717px;
+  padding: 50px 0;
+}
+
+.world_link {
+  display: block;
+  margin-top: 486px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.world_link a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #1eacc7;
+}
+
+footer {
+  height: 148px;
+}
+
+footer .hr_footer {
+  display: block;
+  border: 2px solid #1eacc7;
+  width: 300px;
+  margin: 14px auto;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
