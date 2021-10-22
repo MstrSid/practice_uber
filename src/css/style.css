@@ -2,6 +2,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 header {
   position: relative;
   height: 50px;
