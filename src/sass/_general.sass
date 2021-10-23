@@ -264,6 +264,7 @@ p
 		display: block
 		margin: 0 auto
 		margin-top: 56px
+		width: 100%
 	&_text
 		font-size: 16px
 		font-weight: 400
@@ -350,56 +351,56 @@ p
 		&:nth-child(3)
 			display: flex
 			justify-content: end
-		.footer_social_icons
+	&_social_icons
+		display: flex
+		vertical-align: middle
+		width: 160px
+		a
+			transition: 0.4s all
 			display: flex
-			vertical-align: middle
-			width: 160px
-			a
-				transition: 0.4s all
-				display: flex
-				width: 32px
-				height: 32px
-				justify-content: center
-				align-items: center
-				text-decoration: none
-				background-color: #000
-				color: #fff
-				font-size: 20px
-				border-radius: 100%
-				margin: 0 7px 0 0
-				&:hover
-					color: $main_red
-		.footer_links
-			display: block
+			width: 32px
+			height: 32px
+			justify-content: center
+			align-items: center
+			text-decoration: none
+			background-color: #000
+			color: #fff
+			font-size: 20px
+			border-radius: 100%
+			margin: 0 7px 0 0
+			&:hover
+				color: $main_red
+	&_links
+		display: block
+		text-align: center
+		max-width: 390px
+		margin: 0 auto
+		&_main
+			display: flex
 			text-align: center
-			width: 390px
-			margin: 0 auto
-			&_main
-				display: flex
-				text-align: center
-				justify-content: space-around
-				a
-					text-transform: uppercase
-					text-decoration: none
-					font-size: 15px
-					font-weight: 300
-					color: #070716
-			&_sublinks
-				margin-top: 16px
-				display: flex
-				text-align: center
-				justify-content: space-between
-				a
-					text-transform: uppercase
-					text-decoration: none
-					font-size: 11px
-					font-weight: 300
-					color: #999
-			&_stores
-				display: flex
-				align-content: end
-				a
-					margin: 0 5px
+			justify-content: space-around
+			a
+				text-transform: uppercase
+				text-decoration: none
+				font-size: 15px
+				font-weight: 300
+				color: #070716
+		&_sublinks
+			margin-top: 16px
+			display: flex
+			text-align: center
+			justify-content: space-between
+			a
+				text-transform: uppercase
+				text-decoration: none
+				font-size: 11px
+				font-weight: 300
+				color: #999
+		&_stores
+			display: flex
+			align-content: end
+			a
+				margin: 0 5px
 	&_language
 		display: block
 		text-align: center

@@ -1,4 +1,4 @@
-@media (max-width: 1200px)
+@media (max-width: 1199px)
 	.menu
 		&_item
 			padding-right: 20px
@@ -9,6 +9,17 @@
 			align-items: flex-start
 			&_descr
 				width: 320px
+
+	.mobile
+		&_item
+			width: 300px
+
+	.footer
+		&_links
+			&_stores
+				flex-direction: column
+				a
+					margin: 0 5px 10px 5px
 
 @media (max-width: 996px)
 	.promo
@@ -24,6 +35,12 @@
 	.mobile
 		&_item
 			width: 300px
+
+	.footer
+		&_links
+			&_sublinks
+				a
+					font-size: 10px
 
 @media (max-width: 991px)
 	.menu
@@ -53,6 +70,23 @@
 			flex-direction: column
 			&_descr
 				margin-top: 18px
+	
+	.conditions_requirements
+		&_item
+			width: 100%
+			ul
+				font-size: 22px
+
+	.footer
+		&_links
+			&_main
+				flex-direction: column
+				a
+					font-size: 18px
+			&_sublinks
+				flex-direction: column
+				a
+					font-size: 14px
 
 @media (max-width: 767px)
 	.menu
