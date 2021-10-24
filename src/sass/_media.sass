@@ -70,7 +70,7 @@
 			flex-direction: column
 			&_descr
 				margin-top: 18px
-	
+
 	.conditions_requirements
 		&_item
 			width: 100%
@@ -78,17 +78,42 @@
 				font-size: 22px
 
 	.footer
-		&_links
-			&_main
-				flex-direction: column
-				a
-					font-size: 18px
-			&_sublinks
-				flex-direction: column
-				a
-					font-size: 14px
+		.wrapper>div
+			&:nth-child(1)
+				width: 20%
+			&:nth-child(2)
+				width: 60%
+			&:nth-child(3)
+				width: 20%
 
 @media (max-width: 767px)
+	.promo
+		&_header
+			line-height: 45px
+
+	.subheader
+		&_logo
+			img
+				width: 100%
+		&_call_number
+			margin-top: 10px
+			display: block
+			font-weight: normal
+			font-size: 16px
+			text-transform: uppercase
+			text-align: center
+		&_btn
+			display: block
+			width: 150px
+			height: 34px
+			margin: 4px auto 0 auto
+
+	.reasons
+		&_item
+			&_descr
+				&_title
+					text-align: center
+
 	.menu
 		position: fixed
 		transition: 0.5s all
@@ -109,3 +134,173 @@
 			padding-right: 0
 			border: none
 			margin: 10px 0
+
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 26px
+		height: 18px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #fff
+			margin-bottom: 4px
+			transition: 0.4s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(6px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(6px) rotate(45deg)
+	.footer
+		padding-bottom: 15px
+		.wrapper
+			flex-direction: column
+		.wrapper>div
+			width: 100%
+			align-items: center
+			&:nth-child(1)
+				margin: 15px auto 0 auto
+				order: 2
+				justify-content: center
+				width: 100%
+			&:nth-child(2)
+				margin: 15px auto 0 auto
+				order: 1
+				justify-content: center
+				width: 100%
+			&:nth-child(3)
+				order: 3
+				margin: 15px auto 0 auto
+				justify-content: center
+				width: 100%
+		&_social_icons
+			margin: 0 auto
+		&_links_main
+			margin: 0 auto
+		&_links_stores
+			flex-direction: row
+			margin: 0 auto
+
+	.mobile
+		&_item
+			width: 250px
+			height: 250px
+
+	.xs-hidden
+		display: none
+
+	.xs-visible
+		display: block
+
+@media (max-width: 575px)
+	.subheader
+		top: 42px
+		&_official
+			display: none
+		&_logo
+			margin-top: 27px
+		&_btn
+			width: 118px
+			font-size: 11px
+
+	.menu
+		&_item
+			a
+				display: block
+				text-align: center
+
+	.possibilities
+		min-height: 450px
+		padding: 20px
+		&_bg_black
+			height: 100%
+		&_text
+			color: #fff
+			font-weight: 300
+
+	.reasons
+		padding: 30px 0
+		&_item
+			&_round
+				margin: 0
+			&_descr
+				width: 100%
+
+	.promo
+		min-height: 300px
+		&_header
+			margin-top: 100px
+			font-size: 34px
+		&_subheader
+			font-size: 20px
+		&_btn
+			margin-top: 90px
+			width: 210px
+			height: 50px
+			tab-size: 16px
+			font-weight: 300
+		&_descr
+			display: none
+
+	.conditions_requirements
+		padding: 20px 0
+		&_item
+			margin-top: 12px
+			ul
+				font-size: 16px
+				margin-top: 0
+				li
+					margin-bottom: 0
+					&::before
+						content: ''
+						top: 1px
+			&_title
+				font-size: 18px
+
+	.mobile
+		padding-bottom: 20px
+
+	.world
+		min-height: 310px
+		padding-bottom: 15px
+		&_link
+			margin-top: 100px
+	.title
+		font-size: 15px
+		margin-top: 12px
+
+	.footer
+		.hr_footer
+			width: 100%
+		&_social_icons
+			margin: 0 auto
+		&_links_main
+			a
+				font-size: 12px
+				font-weight: 400
+		&_links_sublinks
+			margin-top: 0
+			flex-wrap: wrap
+			justify-content: space-between
+			a
+				font-size: 11px
+				font-weight: 400
+				margin: 5px 20px 0 20px
+		&_links_stores
+			flex-direction: row
+			margin: 0 auto
+			a
+				img
+					width: 95%
+	header
+		height: 42px
+		nav
+			height: 42px

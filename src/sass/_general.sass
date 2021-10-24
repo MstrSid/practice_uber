@@ -72,9 +72,13 @@ nav
 		background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
 		@include btn_hover
 
+.hamburger
+	display: none
+
 .promo
 	background: url('../img/bg_top.jpg') center (center / cover) no-repeat
 	min-height: 800px
+	padding-bottom: 50px
 	&_header
 		margin-top: 151px
 		font-size: 60px
@@ -227,6 +231,9 @@ p
 			&:hover
 				&:before, &:after
 					background-color: $main_red
+					transform: translateY(-50%) rotate(45deg)
+				&:after
+					transform: translateX(-50%) rotate(45deg)
 		&_subtitle
 			font-size: 24px
 			font-weight: 300
@@ -367,7 +374,7 @@ p
 			color: #fff
 			font-size: 20px
 			border-radius: 100%
-			margin: 0 7px 0 0
+			margin: 0 0 0 7px
 			&:hover
 				color: $main_red
 	&_links
@@ -410,3 +417,5 @@ p
 			text-transform: uppercase
 			font-size: 11px
 			color: $main_blue
+.xs-visible
+		display: none
