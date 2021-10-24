@@ -1,4 +1,15 @@
-@media (max-width: 1199px)
+@media (hover: hover) and (pointer: fine)
+	.subheader
+		&_btn
+  			&:hover
+				background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+	.promo
+		&_btn
+  			&:hover
+				background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+}
+	
+	@media (max-width: 1199px)
 	.menu
 		&_item
 			padding-right: 20px
@@ -193,6 +204,7 @@
 		&_item
 			width: 250px
 			height: 250px
+			padding-top: 68px
 
 	.xs-hidden
 		display: none
@@ -212,7 +224,10 @@
 			font-size: 11px
 
 	.menu
+		padding: 0
 		&_item
+			width: 100%
+			padding-bottom: 5px
 			a
 				display: block
 				text-align: center

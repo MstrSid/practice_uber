@@ -29,7 +29,7 @@ nav {
 
 .menu_item {
   border-right: 2px black dotted;
-  padding-right: 28px;
+  padding-right: 48px;
 }
 
 .menu_item:last-child {
@@ -879,6 +879,7 @@ p.promo_descr {
   .mobile_item {
     width: 250px;
     height: 250px;
+    padding-top: 68px;
   }
   .xs-hidden {
     display: none;
@@ -901,6 +902,13 @@ p.promo_descr {
   .subheader_btn {
     width: 118px;
     font-size: 11px;
+  }
+  .menu {
+    padding: 0;
+  }
+  .menu_item {
+    width: 100%;
+    padding-bottom: 5px;
   }
   .menu_item a {
     display: block;
