@@ -628,6 +628,17 @@ p.promo_descr {
   display: none;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .subheader_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+  }
+  .promo_btn:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+  }
+}
+
 @media (max-width: 1199px) {
   .menu_item {
     padding-right: 20px;
